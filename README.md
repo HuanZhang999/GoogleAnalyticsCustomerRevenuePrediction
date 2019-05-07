@@ -27,9 +27,9 @@ hits: This row and nested fields are populated for any and all types of hits. Pr
 customDimensions: This section contains any user-level or session-level custom dimensions that are set for a session. This is a repeated field and has an entry for each dimension that is set.
 totals: This set of columns mostly includes high-level aggregate data.
     
-Why did I do this:
+Why do I do this:
 
-I translated the winner's (from Konstantin Nikolaev) R code to Python code while I found his strategy simple and effective. 
+I have translated the winner's (from Konstantin Nikolaev) R code to Python code while I found his strategy simple and effective. While his solution has no validation part, I added extra validation, besides did further feature engineering on the text columns (geoNetwork and trafficSource).
 
 - Train creation: he took 4 non-overlapping windows of 168 days, calculated features for users in each period and calculated target for each user on each corresponding 62-day window. Then those 4 dataframes were combined in one train set.
 
