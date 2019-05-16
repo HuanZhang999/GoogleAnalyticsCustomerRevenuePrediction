@@ -36,5 +36,6 @@ https://www.kaggle.com/c/ga-customer-revenue-prediction/discussion/82614#latest-
 
 - Model creation: 
   LGBM: it was used by Konstantin Nikolaev.
-  Neural Network with Entity Embeddings: This strategie was successfully used in Rossmann's sales prediction. Here I employed this method to predict customers' return and consume in the future. 
+  
+  Neural Network with Entity Embeddings: In this project I employed this method to predict customers' return and consume in the future. This strategie was successfully used in Rossmann's sales prediction. 
   
