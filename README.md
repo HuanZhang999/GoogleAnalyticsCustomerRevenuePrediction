@@ -29,12 +29,11 @@ totals: This set of columns mostly includes high-level aggregate data.
     
 The solution:
 
-- Train creation: The idea is from the Kaggle winner Konstantin Nikolaev. He took 4 non-overlapping windows of 168 days, calculated features for users in each period and calculated target for each user on each corresponding 62-day window. Then those 4 dataframes were combined in one train set.
-
-The original solution R codes can be found here:
+- Train creation: Here I followed the idea from the Kaggle winner Konstantin Nikolaev. He took 4 non-overlapping windows of 168 days, calculated features for users in each period and calculated target for each user on each corresponding 62-day window. Then those 4 dataframes were combined in one train set. The original solution R codes can be found here:
 https://www.kaggle.com/c/ga-customer-revenue-prediction/discussion/82614#latest-482575
 
 - Model creation: 
+
   LGBM: it was used by Konstantin Nikolaev.
   
   Neural Network with Entity Embeddings: In this project I employed this method to predict customers' return and consume in the future. This strategie was successfully used in Rossmann's sales prediction. 
